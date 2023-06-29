@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2224055 - web演習11回目の課題</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #efefef;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .card-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 30%;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card p {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 48%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>テキストタイトル</h1>
+        <div class="card-wrap">
+            <div class="card">
+                <img src="photo.jpg" alt="">
+                <p>海中</p>
+            </div>
+            <div class="card">
+                <img src="photo.jpg" alt="">
+                <p>海中</p>
+            </div>
+            <div class="card">
+                <img src="photo.jpg" alt="">
+                <p>海中</p>
+
+            </div>
+            <div class="card">
+                <img src="photo.jpg" alt="">
+                <p>海中</p>
+            </div>
+            <div class="card">
+                <img src="photo.jpg" alt="">
+                <p>海中</p>
+            </div>
+            <div class="card">
+                <img src="photo.jpg" alt="">
+                <p>海中</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
